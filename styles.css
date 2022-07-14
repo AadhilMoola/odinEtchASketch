@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+#container{
+height: 1000px;
+width: 1000px;
+    
+}
+
+
+.grid{
+    background-color: rgb(12, 58, 99);
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+}
+
+.containerRow{
+    display: flex;
+    flex-direction: row;
+}

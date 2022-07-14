@@ -1,0 +1,5 @@
+For the 16x16 grid
+
+Create a for loop that creates a new div up till 16 (or a variable that comes from a prompt)
+append those divs to a container.
+start a new loop and append thosen divs to a container
