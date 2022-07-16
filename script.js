@@ -26,23 +26,29 @@ function gridCreate(size){
 
 
 function gridCreate(size){
+    //creates grid in a square
     for(let i=0; i<size*size; i++){
         let grid = document.createElement('div')
         grid.classList.add('grid')
         container_div.appendChild(grid)
     }
-}
-
-let gridSize =prompt('What size Grid?') //gridSize_button.addEventListener('click', function(){
-    //return (prompt('What size Grid?'))
-//})
-console.log(gridSize)
-
-gridCreate(gridSize)
-
-let grid_div = document.querySelectorAll('.grid')
+    let grid_div = document.querySelectorAll('.grid')
+    //adds event that changes color when mouse passes over
 for(let i=0; i<grid_div.length; i++){
     grid_div[i].addEventListener('mouseenter',function(){
         grid_div[i].style.cssText = 'background-color:red'
     })
 }
+container_div.style.cssText = `grid-template-columns: repeat(${size}, 1fr);`
+}
+
+let gridSize = 16
+
+gridSize_button.addEventListener('click', function(){
+    gridSize= (prompt('What size Grid?'))
+})
+console.log(gridSize)
+
+gridCreate(gridSize)
+
+
