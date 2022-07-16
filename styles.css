@@ -4,22 +4,37 @@
     box-sizing: border-box;
 }
 
-
-#container{
-height: 1000px;
-width: 1000px;
-    
+#bodyDiv{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+#selectors{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 600px;
+    width: 600px;
+    
+}
 
 .grid{
     background-color: rgb(12, 58, 99);
     border: solid black 2px;
-    height: 100px;
-    width: 100px;
 }
 
 .containerRow{
     display: flex;
     flex-direction: row;
+    /* align-items: stretch; */
+    /* justify-content: stretch; */
 }
