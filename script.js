@@ -42,13 +42,27 @@ for(let i=0; i<grid_div.length; i++){
 container_div.style.cssText = `grid-template-columns: repeat(${size}, 1fr);`
 }
 
-let gridSize = 16
-
+/* let gridSize = 16
+function getGridSize() {
 gridSize_button.addEventListener('click', function(){
-    gridSize= (prompt('What size Grid?'))
+    gridSize = (prompt('What size Grid?'))
+    console.log(gridSize)    
 })
 console.log(gridSize)
+} */
 
-gridCreate(gridSize)
+     gridSize_button.addEventListener('click', function(){
+      size = prompt('What size Grid?')
+      let currentGrid = document.querySelectorAll('.grid')
+      console.log(currentGrid)
+      for(let i=0; i<currentGrid.length; i++){
+        container_div.removeChild(document.querySelector('.grid'))
+      }
+      gridCreate(size)
+})
+
+
+
+gridCreate(4)
 
 
