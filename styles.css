@@ -30,6 +30,7 @@
 }
 
 button{
+    width: 100%;
 display:inline-block;
 padding:0.35em 1.2em;
 border:0.1em solid #FFFFFF;
@@ -60,7 +61,7 @@ button:hover{
 }
 
 .grid{
-    background-color: rgb(12, 58, 99);
+    background-color: white;
     border: solid black 2px;
 }
 
